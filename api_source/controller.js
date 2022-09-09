@@ -6,26 +6,25 @@ let weather = require("../service/weather");
 
 // create an object
 let controllers = {
-    about: (req, res)=>{
+    about: (req, res) => {
 
-//create an object and access the values in the package.json file
-        let aboutInfo ={
+        //create an object and access the values in the package.json file
+        let aboutInfo = {
             name: properties.name,
             description: properties.description,
-            author: properties.author 
+            author: properties.author
         }
-// return the object in json format
+        // return the object in json format
         res.json(aboutInfo);
     },
 
-//create a function
-    getWeather: function(req, res){
-
-//call the find method on the weather module
-        weather.find(req, res, function(err, weath) {
-            if(err)
+    //create a function
+    getWeather: function (req, res) {
+        //call the find method on the weather module
+        weather.find(req, res, function (err, weath) {
+            if (err)
                 res.send(err);
-             res.json(weath);
+            res.json(weath);
         });
     },
 };
