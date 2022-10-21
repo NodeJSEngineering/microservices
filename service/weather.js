@@ -2,7 +2,7 @@
 let request = require("request");
 
 // assign your api key and api url to a variable
-const apiKey = "f8006ef42b372f6ee93989f275199fe2";
+const apiKey = "";
 // const apiUrl = "https://home.openweathermap.org/dashboard/trigger/";
 // https://home.openweathermap.org/dashboard/trigger/f8006ef42b372f6ee93989f275199fe2/weather.json
 // https://api.openweathermap.org/data/2.5/weather?lat=44.34&lon=10.99&appid={API key}
