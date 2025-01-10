@@ -31,7 +31,7 @@ Simple WorldMap app to find countries.
 - [Openweathermap API](https://openweathermap.org/api) To get your api key and url.
 - https://home.openweathermap.org/dashboard/trigger/
 - https://home.openweathermap.org/dashboard/trigger/f8006ef42b372f6ee93989f275199fe2/weather.json
-- [Base URL](http://localhost:5000/)
+- [Base URL](localhost:5000/)
 
 ###  APIs Detail
  **Method**	**Url**	**Action**
