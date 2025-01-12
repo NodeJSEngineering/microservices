@@ -1,8 +1,8 @@
 // create a variable referencing to the package.json file
-let properties = require("../package.json");
+import properties from "../package.json"  assert { type: "json" };;
 
 // create a variable and require the weather file inside the service folder
-let weather = require("../service/weather");
+import weather from "../service/weather.js";
 
 // create an object
 let controllers = {
@@ -30,4 +30,4 @@ let controllers = {
 };
 
 //export the controller module so it can be use in another file within the application
-module.exports = controllers;
+export default controllers;

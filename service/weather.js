@@ -1,6 +1,5 @@
 // declare the request package we added to the package.json
-let request = require("request");
-
+import request from "request";
 const apiKey = "";
 
 let weather = {
@@ -20,4 +19,4 @@ let weather = {
 };
 
 //export the weather module 
-module.exports = weather;
+export default weather;

@@ -13,25 +13,25 @@ describe("UserController", function() {
         const req = { body: { email: faker.internet.email() } };
         await new UserController().register(req, res);
         expect(status.calledOnce).to.be.true;
-        expect(status.args\[0\][0]).to.equal(400);
+        expect(status.args[0][0]).to.equal(400);
         expect(json.calledOnce).to.be.true;
-        expect(json.args\[0\][0].message).to.equal("Invalid Params");
+        expect(json.args[0][0].message).to.equal("Invalid Params");
       });
       it("should not register a user when name and email params are not provided", async function() {
         const req = { body: {} };
         await new UserController().register(req, res);
         expect(status.calledOnce).to.be.true;
-        expect(status.args\[0\][0]).to.equal(400);
+        expect(status.args[0][0]).to.equal(400);
         expect(json.calledOnce).to.be.true;
-        expect(json.args\[0\][0].message).to.equal("Invalid Params");
+        expect(json.args[0][0].message).to.equal("Invalid Params");
       });
       it("should not register a user when email param is not provided", async function() {
         const req = { body: { name: faker.name.findName() } };
         await new UserController().register(req, res);
         expect(status.calledOnce).to.be.true;
-        expect(status.args\[0\][0]).to.equal(400);
+        expect(status.args[0][0]).to.equal(400);
         expect(json.calledOnce).to.be.true;
-        expect(json.args\[0\][0].message).to.equal("Invalid Params");
+        expect(json.args[0][0].message).to.equal("Invalid Params");
       });
       it("should register a user when email and name params are provided", async function() {
         const req = {
